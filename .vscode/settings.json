@@ -50,5 +50,10 @@
   "latex-workshop.message.latexlog.exclude": [
     "glossaries",
     "Underfull"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#0C3510",
+    "titleBar.activeBackground": "#114A16",
+    "titleBar.activeForeground": "#F3FCF4"
+  }
 }
