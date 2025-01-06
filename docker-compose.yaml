@@ -1,0 +1,16 @@
+services:
+    fastapi:
+        build:
+            context: ./
+            dockerfile: ./fastapi/Dockerfile
+        ports:
+            - "8000:8000"
+
+    gradio:
+        build: ./gradio
+        ports:
+            - "7860:7860"
+        depends_on:
+            - fastapi
+        command:
+            ["python", "main.py", "--endpoint", "http://fastapi:8000/predict"]
