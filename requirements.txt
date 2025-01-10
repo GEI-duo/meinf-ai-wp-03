@@ -19,4 +19,6 @@ deap==1.4.1
 update-checker==0.18.0
 tqdm==4.67.1
 stopit==1.1.2
-pycaret[full]==3.3.2
+# pycaret[full]==3.3.2
+tensorflow==2.18.0
+scikeras==0.13.0
